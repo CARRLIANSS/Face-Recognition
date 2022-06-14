@@ -53,3 +53,18 @@ Don't forget to modify `config.py`, you should modify it according to your envir
 ## 6 Pretrained Model Release
 Resnet: 链接：https://pan.baidu.com/s/1e3pellia31CsFhkvzFMm9w  提取码：ltf7 </br>
 FaceMobileNet: 链接：https://pan.baidu.com/s/1kgA3d7ZvhA4Etb-BbSYFCA  提取码：ltf7
+
+## 7 Acknowledgement
+Dataset from [ Huang Haiguang(fengdu78)](https://github.com/fengdu78). </br>
+We borrow code from public projects. We mainly borrow code from  [insightface](https://github.com/deepinsight/insightface).
+
+## 8 Reference
+
+```
+@inproceedings{deng2018arcface,
+title={ArcFace: Additive Angular Margin Loss for Deep Face Recognition},
+author={Deng, Jiankang and Guo, Jia and Niannan, Xue and Zafeiriou, Stefanos},
+booktitle={CVPR},
+year={2019}
+}
+```
