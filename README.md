@@ -55,7 +55,7 @@ Resnet: 链接：https://pan.baidu.com/s/1e3pellia31CsFhkvzFMm9w  提取码：lt
 FaceMobileNet: 链接：https://pan.baidu.com/s/1kgA3d7ZvhA4Etb-BbSYFCA  提取码：ltf7
 
 ## 7 Acknowledgement
-Dataset from [ Huang Haiguang(fengdu78)](https://github.com/fengdu78). </br>
+Data from [ Huang Haiguang(fengdu78)](https://github.com/fengdu78). </br>
 We borrow code from public projects. We mainly borrow code from  [insightface](https://github.com/deepinsight/insightface).
 
 ## 8 Reference
