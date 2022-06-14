@@ -1,5 +1,6 @@
 # Face-Recognition
-Face Recognition by ArcFace
+Face Recognition by ArcFace. </br>
+**Accuracy: 97.6%**
 
 ## Dataset prepare
 we used **105_classes_pins_dataset** dataset to finetune, and following step must be done before training.
@@ -51,5 +52,5 @@ python predict.py
 Don't forget to modify `config.py`, you should modify it according to your environment.
 
 ## pretrained model release
-Resnet: 链接：https://pan.baidu.com/s/1e3pellia31CsFhkvzFMm9w  提取码：ltf7
+Resnet: 链接：https://pan.baidu.com/s/1e3pellia31CsFhkvzFMm9w  提取码：ltf7 </br>
 FaceMobileNet: 链接：https://pan.baidu.com/s/1kgA3d7ZvhA4Etb-BbSYFCA  提取码：ltf7
