@@ -14,7 +14,7 @@ python split_train_val.py
 ```
 
 ### 1.2 Prepare pair.txt
-In this term, we divided the validation set into 2000+ matched pairs, and it including half positive and negative. This pair will be use in evaluation. </br>
+In this part, we divided the validation set into 2000+ matched pairs, and it including half positive and negative. This pair will be use in evaluation. </br>
 You should change the **INPUT_DATA** in `pair_txt.py`.
 
 ```
@@ -28,7 +28,7 @@ Metric: ArcFace. </br>
 Loss Function: FocalLoss. 
 
 ## 3 Train
-In this term, we will finetune the model, and get the best model as well as it's threshold.
+In this part, we will finetune the model, and get the best model as well as it's threshold.
 
 ```
 # train by single gpu
@@ -41,7 +41,7 @@ CUDA_VISIBLE_DEVICES=4,5 python -m torch.distributed.launch --nproc_per_node=2 -
 ```
 
 ## 4 Predict
-In this term, threshold is your best model's threshold.
+In this part, threshold is your best model's threshold.
 
 ```
 python predict.py
