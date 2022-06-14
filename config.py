@@ -67,4 +67,4 @@ class Config(object):
     dist_url = 'env://'
 
     # predict output info
-    student_id = '21451943012'
+    student_id = 'xxx'
