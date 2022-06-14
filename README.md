@@ -1,9 +1,8 @@
 # Face-Recognition
-Face Recognition by ArcFace. </br>
-**Accuracy: 97.6%**
+Face Recognition by ArcFace. **Accuracy: 97.6%.**
 
 ## Dataset prepare
-we used **105_classes_pins_dataset** dataset to finetune, and following step must be done before training.
+we used **105_classes_pins_dataset** dataset to finetune, and following step must be done before training. </br>
 Dataset download(including test dataset and label): 链接：https://pan.baidu.com/s/1jKC-MGQykyV078Mqpy51Ug  提取码：ltf7
 
 ### split train and validation
