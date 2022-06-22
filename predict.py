@@ -35,10 +35,9 @@ def all_data_featurize(data_path, conf, model):
     feature_dict = dict()
     for group in groups:
         data = _preprocess(group, conf.test_transform)
-        data = data.to(conf.device)
-        model = model.to(conf.device)
         with torch.no_grad():
             features = model(data)
+            features = features.cpu().numpy()
         d = {img: [feature, img.split('/')[-2]] for (img, feature) in zip(group, features)}
         feature_dict.update(d)
 
@@ -57,10 +56,9 @@ def test_data_featurize(test_path, conf, model):
     feature_dict = dict()
     for group in groups:
         data = _preprocess(group, conf.test_transform)
-        data = data.to(conf.device)
-        model = model.to(conf.device)
         with torch.no_grad():
             features = model(data)
+            features = features.cpu().numpy()
         d = {img.split('/')[-1].split('.')[0]: feature for (img, feature) in zip(group, features)}
         feature_dict.update(d)
 
@@ -93,7 +91,7 @@ def test(conf, threshold, model, lbl_dict, feat_all_data, mode):
         similarities = []
 
         for path, lst in feat_all_data.items():
-            s = cosin_metric(feat.cpu().numpy(), lst[0].cpu().numpy())
+            s = cosin_metric(feat, lst[0])
             info = (s, lst[-1])
             similarities.append(info)
 
